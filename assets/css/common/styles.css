@@ -394,6 +394,10 @@ button {
         width: 100%;
     }
 
+    .mobile-invisible {
+        display: none;
+    }
+
     .video-trailer-psychonauts2 {
         margin-top: 5px;
         margin-bottom: 10px;

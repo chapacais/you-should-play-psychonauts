@@ -1,4 +1,4 @@
-import { closeModal, openNavMobile, closeNavMobile } from "./common.js";
+import { closeModal, openNavMobile, closeNavMobile, closeModalMobile } from "./common.js";
 
 const url2 = 'https://psychonauts-api.herokuapp.com/api/powers';
 const psiPowersGrid = document.querySelector('.psi-powers-grid')
@@ -66,5 +66,6 @@ window.addEventListener('scroll', () => {
 
 displayPsiPowers(url2);
 closeModal();
+closeModalMobile();
 openNavMobile();
 closeNavMobile();

@@ -1,9 +1,10 @@
-export { closeModal, openNavMobile, closeNavMobile };
+export { closeModal, openNavMobile, closeNavMobile, closeModalMobile };
 
 const modal = document.querySelector('.modal');
 const headerNav = document.querySelector('.header__nav');
 const hamburgerBtn = document.querySelector('.header__hamburger');
 const closeNavBtn = document.querySelector('.header__close');
+const closeModalBtn = document.querySelector('.modal__close');
 
 function closeModal() {
     window.addEventListener('click', (e) => {
@@ -11,6 +12,12 @@ function closeModal() {
         if(e.target.classList[0] == 'modal') {
             modal.classList.add('invisible');
         }
+    })
+}
+
+function closeModalMobile() {
+    closeModalBtn.addEventListener('click', () => {
+        modal.classList.add('invisible');
     })
 }
 

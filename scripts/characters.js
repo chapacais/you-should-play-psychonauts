@@ -1,4 +1,4 @@
-import { closeModal, openNavMobile, closeNavMobile } from "./common.js";
+import { closeModal, openNavMobile, closeNavMobile, closeModalMobile } from "./common.js";
 
 const url1 = 'https://psychonauts-api.herokuapp.com/api/characters';
 const charactersGrid = document.querySelector('.characters-grid');
@@ -65,5 +65,6 @@ window.addEventListener('scroll', () => {
 
 displayCharacters(url1);
 closeModal();
+closeModalMobile();
 openNavMobile();
 closeNavMobile();
