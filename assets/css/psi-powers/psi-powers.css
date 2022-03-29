@@ -1,0 +1,117 @@
+.psi-powers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.each-psi-power {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid rgba(4, 90, 97, 0.5);
+    border-radius: 5px;
+    min-height: 100px;
+    max-width: 200px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.each-psi-power:hover {
+    animation-name: border-animation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes border-animation {
+    0% {border: 3px solid rgba(4, 90, 97, 0.5);}
+    25% {border: 3px solid rgb(11, 90, 121);}
+    50% {border: 3px solid rgba(4, 90, 97, 0.5);}
+    75% {border: 3px solid rgb(11, 90, 121);}
+}
+
+.each-psi-power__name {
+    text-transform: capitalize;
+}
+
+.each-psi-power__image {
+    max-height: 100px;
+    border-radius: 33%;
+    margin: 20px 0;
+}
+
+.each-psi-power__description {
+    margin-bottom: 20px;
+}
+
+.modal-psi-power-container {
+    background: rgb(15, 88, 71);
+    min-width: 300px;
+    padding: 35px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.modal-psi-power__name {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.modal-psi-power__image {
+    max-width: 100px;
+    margin: 20px 0;
+    border-radius: 15px;
+}
+
+.modal-psi-power__description {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.modal-psi-power__link {
+    color: #81F9D4;
+}
+
+@media screen and (max-width: 1440px) {
+    .psi-powers-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 895px) {
+    .psi-powers-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 595px) {
+    .header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        transition: all 0.5s;
+    }
+
+    .header-bg-scroll {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .psi-powers-grid {
+        margin-top: 90px;
+        grid-template-columns: 1fr;
+    }
+
+    .modal-psi-power-container {
+        background: rgba(15, 88, 71, 0.9);
+        width: 100vw;
+        border-radius: 0;
+    }
+}

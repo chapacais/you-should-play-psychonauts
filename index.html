@@ -12,11 +12,12 @@
 </head>
 <body>
     <header class="header container">
-        <h1>Why you should play Psychonauts</h1>
-        <nav>
+        <h1>You Should Play Psychonauts</h1>
+        <i class="fa-solid fa-bars header__hamburger"></i>
+        <nav class="header__nav">
+            <i class="fa-solid fa-xmark header__close"></i>
             <ul class="header__listnav">
                 <li class="header__listnav--item"><a href="#" class="nav-link link-selecionado">Home</a></li>
-                <li class="header__listnav--item"><a href="#" class="nav-link">About</a></li>
                 <li class="header__listnav--item"><a href="characters.html" class="nav-link">Characters</a></li>
                 <li class="header__listnav--item"><a href="psi-powers.html" class="nav-link">Psi-powers</a></li>
             </ul>
@@ -28,17 +29,17 @@
                 <iframe src="https://www.youtube.com/embed/aDbDShqvc_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
-        <section class="sobre-jogo container">
-            <div class="sobre-jogo__container">
+        <section class="about-the-game container">
+            <div class="about-the-game__container">
                 <div class="raz-img-container">
-                    <img class="sobre-jogo__raz-img" src="assets/imagens/Raz_Think.png" alt="Imagem do Raz pensando">
+                    <img class="about-the-game__raz-img" src="assets/imagens/Raz_Think.png" alt="Image of Raz thinking">
                 </div>
-                <div class="sobre-jogo__texto">
-                    <div class="sobre-jogo__texto--first">
+                <div class="about-the-game__text">
+                    <div class="about-the-game__text--first">
                         <h3>Lorem, ipsum dolor.</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptate quasi, excepturi dolorum velit laboriosam quisquam at error voluptatum non officia, maiores eius. Aut inventore sit voluptatem doloribus officiis quibusdam!</p>
                     </div>
-                    <div class="sobre-jogo__texto--second">
+                    <div class="about-the-game__text--second">
                         <h3>Lorem, ipsum dolor.</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptate quasi, excepturi dolorum velit laboriosam quisquam at error voluptatum non officia, maiores eius. Aut inventore sit voluptatem doloribus officiis quibusdam!</p>
                     </div>
@@ -59,7 +60,7 @@
                 <div class="wrapper">
                     <div class="random-character random-wrapper">
                         <h2 class="random-character__name">Razputin Aquato</h2>
-                        <img src="" alt="" class="random-character__image">
+                        <img src="" alt="Random Psychonauts character" class="random-character__image">
                         <button class="random-character__btn get-btn">Get Random Character</button>
                     </div>
                     <p class="wrapper-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod illo voluptates inventore ipsum corrupti nobis harum perferendis eum animi cum, dignissimos voluptate quasi vero facere aut voluptas facilis et.</p>
@@ -74,7 +75,7 @@
                     <p class="wrapper-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod illo voluptates inventore ipsum corrupti nobis harum perferendis eum animi cum, dignissimos voluptate quasi vero facere aut voluptas facilis et.</p>
                     <div class="random-psi-power random-wrapper">
                         <h2 class="random-psi-power__name">clairvoyance</h2>
-                        <img src="" alt="" class="random-psi-power__image">
+                        <img src="" alt="Random Psychonauts psi-power ability" class="random-psi-power__image">
                         <p class="random-psi-power__description">Allows the user to see through the minds of others.</p>
                         <button class="random-psi-power__btn get-btn">Get Random Psi-power</button>
                     </div>
@@ -84,41 +85,41 @@
         <section class="the-world container">
             <div class="the-world__container following-sections">
                 <h2>The World of Psychonauts</h2>
-                <h3>Travel through the minds</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum? Culpa nihil omnis nesciunt cum error fugit quam iste reiciendis. Expedita fuga harum ducimus aut omnis perspiciatis tempore distinctio quia.</p>
+                <h3>Travel through the minds of the misfits</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum? Culpa nihil omnis nesciunt cum error fugit quam iste reiciendis. Expedita fuga harum ducimus aut omnis perspiciatis tempore distinctio quia.</p>   
                 <div class="the-world__images">
-                    <div class="the-world__image-container">
-                        <img src="assets/imagens/maxresdefault.jpg" alt="" class="the-world__image">
-                    </div>
-                    <div class="the-world__image-container">
-                        <img src="assets/imagens/psycho.jpg" alt="" class="the-world__image">
-                    </div>
-                    <div class="the-world__image-container">
-                        <img src="assets/imagens/the-best-ps2-games-of-all-time_e8q7.jpg" alt="" class="the-world__image">
-                    </div>
+                    <img src="assets/imagens/worldimage1.jpg" alt="Psychonauts ingame screenshot" class="the-world__image">
+                    <img src="assets/imagens/worldimage2.jpg" alt="Psychonauts ingame screenshot" class="the-world__image">
+                    <img src="assets/imagens/worldimage3.jpg" alt="Psychonauts ingame screenshot" class="the-world__image">
                 </div>
-                <div class="modal-image-container invisivel">
-                    <img src="" alt="Imagem do modal" class="modal-image">
-                </div>
+            </div>
+            <div class="modal invisible">
+                <img src="" alt="" class="modal-image">
+            </div>
         </section>
         <section class="psychonauts-2 container">
             <div class="psychonauts-2__container following-sections">
                 <h2>Psychonauts 2</h2>
                 <h3>16 years later</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum? Culpa nihil omnis nesciunt cum error fugit quam iste reiciendis. Expedita fuga harum ducimus aut omnis perspiciatis tempore distinctio quia.</p>
-                <div class="video-trailer-container">
-                    <iframe src="https://www.youtube.com/embed/mBi9rqCZ4os" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
             </div>
         </section>
+        <div class="video-trailer-container video-trailer-psychonauts2 container">
+            <iframe src="https://www.youtube.com/embed/mBi9rqCZ4os" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </main>
     <footer class="footer container">
-        <p>Developed by Pedro Chapacais</p>
-        <div class="footer__icons">
-            <a href="https://www.linkedin.com/in/pedro-chapacais/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/chapacais" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <div class="footer__disclaimer">
+            <p>Psychonauts is a product of <a class="footer__link" href="https://www.doublefine.com/" target="_blank">Double Fine</a>. All Rights Reserved.</p>
+        </div>
+        <div class="footer__info">
+            <p>Developed by Pedro Chapacais using the <a class="footer__link" href="https://psychonauts-api.netlify.app/" target="_blank">Psychonauts API</a></p>
+            <div class="footer__icons">
+                <a href="https://www.linkedin.com/in/pedro-chapacais/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/chapacais" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
         </div>
     </footer>
-    <script src="main.js"></script>
+    <script type="module" src="scripts/main.js"></script>
 </body>
 </html>

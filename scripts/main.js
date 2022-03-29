@@ -1,3 +1,5 @@
+import { closeModal, closeNavMobile, openNavMobile } from "./common.js";
+
 const url1 = 'https://psychonauts-api.herokuapp.com/api/characters';
 const url2 = 'https://psychonauts-api.herokuapp.com/api/powers';
 const characterName = document.querySelector('.random-character__name');
@@ -10,22 +12,13 @@ const psiPowerDescription = document.querySelector('.random-psi-power__descripti
 const psiPowerBtn = document.querySelector('.random-psi-power__btn')
 const psiPowers = [];
 const worldImage = document.querySelectorAll('.the-world__image');
-const modal = document.querySelector('.modal-image-container');
 const modalImage = document.querySelector('.modal-image');
+const modal = document.querySelector('.modal');
 
 let randomNumber1;
 let randomNumber2;
 let imageSrc;
-
-characterBtn.addEventListener('click', () => {
-    randomNumber1 = Math.floor(Math.random() * 6);
-    getCharacters(url1, randomNumber1);
-})
-
-psiPowerBtn.addEventListener('click', () => {
-    randomNumber2 = Math.floor(Math.random() * 12);
-    getPsiPowers(url2, randomNumber2);
-})
+let imageAlt;
 
 async function getCharacters(url, n) {
     const res = await fetch(url);
@@ -50,21 +43,30 @@ async function getPsiPowers(url, n) {
     psiPowerDescription.innerHTML = psiPowers[n].description;
 }
 
-getCharacters(url1, 0);
-getPsiPowers(url2, 0);
+characterBtn.addEventListener('click', () => {
+    randomNumber1 = Math.floor(Math.random() * 6);
+    getCharacters(url1, randomNumber1);
+})
 
-worldImage.forEach((imagem) => {
-    imagem.addEventListener('click', () => {
-        imageSrc = imagem.src
-        console.log(imagem);
-        modal.classList.remove('invisivel');
+psiPowerBtn.addEventListener('click', () => {
+    randomNumber2 = Math.floor(Math.random() * 12);
+    getPsiPowers(url2, randomNumber2);
+})
+
+
+worldImage.forEach((image) => {
+    image.addEventListener('click', () => {
+        imageSrc = image.src;
+        imageAlt = image.alt;
+        console.log(image);
+        modal.classList.remove('invisible');
         modalImage.src = imageSrc;
+        modalImage.alt = imageAlt;
     })
 })
 
-window.addEventListener('click', (e) => {
-    console.log(e.target.classList);
-    if(e.target.classList[0] == 'modal-image-container') {
-        modal.classList.add('invisivel');
-    }
-})
+getCharacters(url1, 0);
+getPsiPowers(url2, 0);
+closeModal();
+openNavMobile();
+closeNavMobile();

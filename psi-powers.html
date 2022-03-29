@@ -8,30 +8,44 @@
     <link rel="stylesheet" href="assets/css/common/reset.css">
     <link rel="stylesheet" href="assets/css/common/styles.css">
     <link rel="stylesheet" href="assets/css/psi-powers/psi-powers.css">
-    <title>Go Play Psychonauts!</title>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <title>Psi-powers | Go Play Psychonauts!</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
     <header class="header container">
-        <h1>Why you should play Psychonauts</h1>
-        <nav>
+        <h1>You Should Play Psychonauts</h1>
+        <i class="fa-solid fa-bars header__hamburger"></i>
+        <nav class="header__nav">
+            <i class="fa-solid fa-xmark header__close"></i>
             <ul class="header__listnav">
                 <li class="header__listnav--item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="header__listnav--item"><a href="#" class="nav-link">About</a></li>
-                <li class="header__listnav--item"><a href="characters.html" class="nav-link ">Characters</a></li>
+                <li class="header__listnav--item"><a href="characters.html" class="nav-link">Characters</a></li>
                 <li class="header__listnav--item"><a href="psi-powers.html" class="nav-link link-selecionado">Psi-powers</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        em desenvolvimento
+        <div class="psi-powers-grid container"></div>
+        <div class="modal invisible">
+            <div class="modal-psi-power-container">
+                <h2 class="modal-psi-power__name"></h2>
+                <img src="" alt="" class="modal-psi-power__image">
+                <p class="modal-psi-power__description"></p>
+                <a href="" target="_blank" class="modal-psi-power__link">Visit the Wiki page for more info</a>
+            </div>
+        </div>
     </main>
     <footer class="footer container">
-        <p>Developed by Pedro Chapacais</p>
-        <div class="footer__icons">
-            <a href="https://www.linkedin.com/in/pedro-chapacais/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/chapacais" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <div class="footer__disclaimer">
+            <p>Psychonauts is a product of <a class="footer__link" href="https://www.doublefine.com/" target="_blank">Double Fine</a>. All Rights Reserved.</p>
+        </div>
+        <div class="footer__info">
+            <p>Developed by Pedro Chapacais using the <a class="footer__link" href="https://psychonauts-api.netlify.app/" target="_blank">Psychonauts API</a></p>
+            <div class="footer__icons">
+                <a href="https://www.linkedin.com/in/pedro-chapacais/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/chapacais" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
         </div>
     </footer>
-    <script src="main.js"></script>
+    <script type="module" src="scripts/psi-powers.js"></script>
 </body>
