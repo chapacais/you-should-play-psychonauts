@@ -23,7 +23,8 @@ button {
     align-items: center;
 }
 
-.header h1 {
+.header__title {
+    text-decoration: none;
     color: #E0E418;
     font-size: 20px;
     font-weight: 700;
@@ -32,12 +33,18 @@ button {
 .header__hamburger {
     display: none;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .header__close {
     display: none;
     color: #000;
     font-size: 20px;
+    cursor: pointer;
+}
+
+.header__close:active {
+    color: #fff;
 }
 
 .header__listnav {
