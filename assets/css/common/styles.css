@@ -11,6 +11,14 @@ button {
     cursor: pointer;
 }
 
+a {
+    color: #81F9D4;
+}
+
+p {
+    text-align: justify;
+}
+
 .container {
     padding: 0 15%;
 }
@@ -129,6 +137,17 @@ button {
     margin-left: 20px;
 }
 
+.setting__container__gif {
+    display: none;
+}
+
+.video-musica {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+
 .characters__container .wrapper {
     display: flex;
     align-items: center;
@@ -137,7 +156,7 @@ button {
     margin-top: 15px;
 }
 
-.wrapper-text {
+.wrapper__text {
     width: 50%;
 }
 
@@ -212,6 +231,8 @@ button {
 
 .random-psi-power__description {
     margin-bottom: 20px;
+    margin-left: 0;
+    text-align: left;
 }
 
 .the-world {
@@ -250,6 +271,16 @@ button {
     display: none;
 }
 
+.video-trailer-psychonauts2 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.video-trailer-psychonauts2 p {
+    padding: 15px;
+    margin-left: 20px;
+}
+
 .footer {
     background: #01221d;
     min-height: 50px;
@@ -270,10 +301,6 @@ button {
 .footer__icons {
     display: flex;
     gap: 20px;
-}
-
-.footer__link {
-    color: #81F9D4;
 }
 
 .fa-brands {
@@ -359,6 +386,16 @@ button {
         height: 200px;
     }
 
+    .following-sections p {
+        margin-left: 0;
+    }
+
+    .setting__container__gif {
+        display: block;
+        width: 80%;
+        margin: 5px auto;
+    }
+
     .about-the-game__container {
         flex-direction: column;
         padding: 15px;
@@ -382,7 +419,7 @@ button {
         flex-direction: column;
     }
 
-    .wrapper-text {
+    .wrapper__text {
         width: 100%;
         order: -1;
     }
@@ -401,13 +438,18 @@ button {
         width: 100%;
     }
 
-    .mobile-invisible {
-        display: none;
-    }
-
     .video-trailer-psychonauts2 {
         margin-top: 5px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
+    }
+    
+    .video-trailer-psychonauts2 p {
+        padding: 15px 35px;
+        margin-left: 0;
+    }
+
+    .mobile-invisible {
+        display: none;
     }
 
     .footer {

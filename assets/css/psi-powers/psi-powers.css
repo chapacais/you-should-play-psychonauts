@@ -89,10 +89,6 @@
     margin-bottom: 10px;
 }
 
-.modal-psi-power__link {
-    color: #81F9D4;
-}
-
 @media screen and (max-width: 1440px) {
     .psi-powers-grid {
         grid-template-columns: 1fr 1fr 1fr;

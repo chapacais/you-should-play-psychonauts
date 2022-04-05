@@ -79,10 +79,6 @@
     border-radius: 15px;
 }
 
-.modal-character__link {
-    color: #81F9D4;
-}
-
 @media screen and (max-width: 1440px) {
     .characters-grid {
         grid-template-columns: 1fr 1fr 1fr;
