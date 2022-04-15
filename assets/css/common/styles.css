@@ -148,7 +148,6 @@ p {
     gap: 20px;
 }
 
-
 .characters__container .wrapper {
     display: flex;
     align-items: center;
@@ -414,6 +413,11 @@ p {
         margin-top: 10px;
         margin-left: 0;
         width: 100%;
+    }
+
+    .video-musica {
+        flex-direction: column;
+        gap: 5px;
     }
 
     .wrapper {
