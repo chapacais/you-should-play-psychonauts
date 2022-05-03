@@ -20,7 +20,7 @@ p {
 }
 
 .container {
-    padding: 0 15%;
+    padding: 0 12%;
 }
 
 .header {
@@ -313,6 +313,16 @@ p {
     color: #fff;
 }
 
+@media screen and (max-width: 1440px) {
+    .container {
+        padding: 0 8%;
+    }
+    
+    .video-trailer-container iframe {
+        height: 500px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     main p {
         font-size: 14px;
@@ -392,7 +402,7 @@ p {
 
     .setting__container__gif {
         display: block;
-        width: 80%;
+        width: 50%;
         margin: 5px auto;
     }
 
@@ -475,5 +485,11 @@ p {
 
     .fa-brands {
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .setting__container__gif {
+        width: 80%;
     }
 }
